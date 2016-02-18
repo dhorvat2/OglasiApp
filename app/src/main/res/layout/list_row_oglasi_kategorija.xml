@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <!-- Oglas naziv -->
+    <TextView
+        android:id="@+id/txtnazivOglasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/naziv"
+        android:textStyle="bold"
+        android:text="Naziv oglasa"/>
+
+    <!-- Cijena -->
+    <TextView
+        android:id="@+id/txtcijenaOglasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnazivOglasa"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/cijena"
+        android:text="Cijena"/>
+
+    <!-- Korisnik -->
+    <TextView
+        android:id="@+id/txtkorisnikOglasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcijenaOglasa"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/korisnik"
+        android:text="Korisnik"/>
+    <!-- Datum objave -->
+    <TextView
+        android:id="@+id/txtDatumObjave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnazivOglasa"
+        android:layout_toRightOf="@+id/txtnazivOglasa"
+        android:paddingLeft="5dp"
+        android:text="Datum objave" />
+
+    <!--Datum oglasa -->
+    <TextView
+        android:id="@+id/txtDatumOglasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Datum"
+        android:layout_alignTop="@+id/txtkorisnikOglasa"
+        android:layout_alignLeft="@+id/txtDatumObjave"
+        android:layout_alignStart="@+id/txtDatumObjave" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/txtDatumObjave"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+</RelativeLayout>
